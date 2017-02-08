@@ -1,0 +1,19 @@
+<ion-view view-title="Home">
+    <ion-nav-title align-title="center">
+            Home
+    </ion-nav-title>
+    
+    <ion-content>
+        <a class="button icon icon-right ion-chevron-right" href="#/app/orders">Scientific Facts</a>
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="fetchRandomText()">
+        </ion-refresher>
+        <div class="loader" ng-if="!myHTML">
+            <ion-spinner></ion-spinner>
+        </div>
+        <div class="content" ng-bind-html="myHTML">
+        </div>
+    </ion-content>
+
+</ion-view>
