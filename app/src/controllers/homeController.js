@@ -13,6 +13,7 @@ module.exports = [
     function( $scope, ExampleService )
     {
       $scope.myHTML = null;
+      $scope.myHTML = null;
 
       // just an example...
       $scope.fetchRandomText = function() {

@@ -90,6 +90,42 @@ angular.module( 'SmbDashboard', [
             controller: 'SettingsController'
           }
         }
+      })
+      .state('app.feeds', {
+        url: '/feeds',
+        cache: true,
+        views: {
+          'feeds-tab': {
+            templateUrl: 'templates/views/feeds.html',
+            controller: 'SettingsController'
+          }
+        }
+      })
+      .state('app.header', {
+        url: '/header',
+        cache: true,
+        views: {
+          'header-tab': {
+            templateUrl: 'templates/views/header.html',
+            controller: 'SettingsController'.
+             OnEnter: function() {
+                console.log('On Enter');
+              },
+              OnExit: function() {
+                console.log('On Exit');
+              }
+          }
+        }
+      })
+      .state('app.components', {
+        url: '/components',
+        cache: false,
+        views: {
+          'components-tab': {
+            templateUrl: 'templates/views/compoments.html',
+            controller: 'SettingsController'
+          }
+        }
       });
 
 
