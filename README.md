@@ -1,4 +1,4 @@
 # SMBDashboard - Ionic 1 Application.
-Run - 
-#ionic serve
+# Run - 
+# ionic serve
 
